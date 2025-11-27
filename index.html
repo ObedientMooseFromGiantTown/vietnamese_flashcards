@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vietnamese Flashcards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> <!-- Google Font -->
+    <script src="https://unpkg.com/papaparse@5.0.2/papaparse.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Vietnamese Flashcards</h1>
+        <p id="language-direction" class="language-direction">English-to-Vietnamese</p>
+        <div class="card">
+            <div class="card-content">
+                <p></p>
+            </div>
+        </div>
+        <button id="show-answer" class="button button-red">Show Answer</button>
+        <div class="button-container">
+            <button id="prev" class="button button-primary">Previous</button>
+            <button id="next" class="button button-primary">Next</button>
+        </div>
+        <button id="reverse" class="button button-green">Reverse Language</button>
+        <button type="button" class="collapsible">Notes (click to expand)</button>
+        <div class="content">
+            <ul>
+                <li>It might take a moment before the first card loads, a couple seconds at most! Please click <b>Next to load a new card</b>; <b>Previous to go back to the last card</b> once the first card has loaded.</li>
+                <li>The Reverse button will swap which language is used as the question. Click on it to move from English first, to Vietnamese first..</li>
+                <li><b>All flashcards are fully random</b>! You might see the same card more than once, and there's no intelligence behind what's picked.</li>
+                <li>There might be (and likely are) spelling mistakes, and issues with diatrics - I'll try to fix these when I can.
+                <li>There's technically no offline functionality, but once loaded, the page should work without internet.</li>
+                <li style="color: red;">If you want to add content to the flashcards (or change/correct), please request access to the <a href="https://docs.google.com/spreadsheets/d/1OfNF_QtRMkWxAnLQfDOlk0zKv85eNqdJINX5fg3pKUw/edit?gid=0#gid=0">following sheet</a>, which functions as the database for the app.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">Created by: <a href="https://github.com/ObedientMooseFromGiantTown">Shameek Phukan</a></div>
+    <script type="module" src="flashcards.module.js"></script>
+</body>
+</html>

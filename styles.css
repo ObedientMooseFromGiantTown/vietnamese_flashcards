@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 20px;
+}
+
+h1 {
+    color: #575761;
+    font-weight: 700;
+}
+
+.collapsible {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.active, .collapsible:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f5f5f5;
+}
+
+.card {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    perspective: 1000px;
+    border: 1px solid #ddd;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 0px;
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: opacity 0.3s;
+    color: black;
+    font-size: 1.5em;
+}
+
+button {
+    display: inline-block;
+    color: white;
+    padding: 8px 20px;
+    margin: 5px 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+#show-answer {
+    background-color: red;
+    margin-bottom: 5px;
+}
+
+#show-answer:hover {
+    background-color: darkred;
+}
+
+#prev, #next {
+    background-color: #0099cc;
+}
+
+#prev:hover, #next:hover {
+    background-color: #0077a2;
+}
+
+#reverse {
+    background-color: green;
+}
+
+#reverse:hover {
+    background-color: darkgreen;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 5px;
+    flex-direction: row;
+}
+
+.button-container button {
+    flex: 1;
+    margin: 0 5px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 10px;
+    color: #575761;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border-top: 1px solid #ddd;
+}
+
+@media (max-width: 600px) {
+    .container {
+        gap: 10px;
+    }
+    button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+.language-direction {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: lightgrey;
+}
