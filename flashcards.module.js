@@ -31,7 +31,7 @@ function showCard(index, isBack = false) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('https://docs.google.com/spreadsheets/d/1OfNF_QtRMkWxAnLQfDOlk0zKv85eNqdJINX5fg3pKUw/export?format=csv')
+    fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vRo1aj9hiROiwBSHLZGf2s7rz2RaT-ASnbvv8RXwUJKcBukQCWjLpBbSWiHa8QcMEaMOGJddCJlAf7b/pub?gid=0&single=true&output=csv')
         .then(response => response.text())
         .then(data => {
             var results = Papa.parse(data, {header: true});
